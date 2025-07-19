@@ -54,6 +54,8 @@ for module in DEPENDENCIES:
     except ImportError:
         if module == "igl":
             missing_deps.append("libigl==2.5.1")
+        elif module == "scipy":
+            missing_deps.append("scipy==1.15.3")
         else:
             missing_deps.append(module)
 
